@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-box">
+      <!-- Contains Both sides: Evaluation and Thank you -->
+      <div class="inner-box">
+        <!-- Container for the main side of evalutaion -->
+        <div>
+          <img class="icon" src="images/icon-star.svg" alt="star icon" />
+        </div>
+        <h1 class="card-tittle">How did we do?</h1>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="numbers">
+          <!-- Numbers section -->
+          <div class="circle">
+            <input id="one" name="number-rating" type="radio" value="1" />
+            <label for="one">1</label>
+          </div>
+          <!-- each number inside of div named circle -->
+          <div class="circle">
+            <input id="two" name="number-rating" type="radio" value="2" />
+            <label for="two">2</label>
+          </div>
+          <div class="circle">
+            <input id="three" name="number-rating" type="radio" value="3" />
+            <label for="three">3</label>
+          </div>
+          <div class="circle">
+            <input id="four" name="number-rating" type="radio" value="4" />
+            <label for="four">4</label>
+          </div>
+          <div class="circle">
+            <input id="five" name="number-rating" type="radio" value="5" />
+            <label for="five">5</label>
+          </div>
+        </div>
+        <button class="button" type="submit">SUBMIT</button>
+      </div>
+    </div>
+
+    <div class="thank-you">
+      <div class="thank-you-card">
+        <div>
+          <img
+            class="image-reciept"
+            src="images/illustration-thank-you.svg"
+            alt="reciept illustration"
+          />
+        </div>
+        <div>
+          <p class="rating-selected">
+            You selected <span class="num-selected">1</span> out of 5
+          </p>
+        </div>
+        <h1>Thank you!</h1>
+        <p class="card-text text-center">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't heistate to get in touch!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

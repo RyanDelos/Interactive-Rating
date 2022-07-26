@@ -1,0 +1,132 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  width: 40rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.main-box {
+  display: block;
+}
+
+.inner-box,
+.thank-you-card {
+  border-radius: 2.4rem;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  color: #fff;
+  padding: 3rem;
+}
+
+.icon {
+  background-color: hsl(213, 30%, 25%);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.card-text {
+  color: hsl(217, 12%, 63%);
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle {
+  background-color: hsl(213, 30%, 25%);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.circle:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: #fff;
+}
+
+/* style for when rating is clicked */
+.circle:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+/* JS class will be added when user clicks number selected */
+.selected {
+  background-color: hsl(217, 12%, 63%);
+  color: #fff;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.button {
+  background: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  padding: 1.2rem;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+/* Thank you card */
+
+.thank-you {
+  display: none;
+  cursor: pointer;
+}
+
+.thank-you-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-selected {
+  background-color: hsl(213, 30%, 25%);
+  border-radius: 5rem;
+  color: hsl(25, 97%, 53%);
+  padding: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
